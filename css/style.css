@@ -121,3 +121,80 @@ table tr:nth-child(even) {
 /* Я добавил стили для своих страниц и общие стили для нашего сайта
 Тебе надо только добавить стили для своих страниц,
 только так чтоб у нас был один стиль, чтоб цвета совпадали и т.д.*/
+
+#application-form {
+  border: 7px solid #b08d57;
+  border-radius: 20px;
+  width: 600px;
+  padding: 2rem;
+  padding-top: 1rem;
+  background-color: #efe9db;
+  margin: 0 auto;
+  
+}
+
+#application-form h2 {
+  text-align: center;
+  color: #b08d57;
+  margin-top: 0;
+
+}
+
+#application-form input,
+#application-form textarea,
+#application-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+#application-form button {
+  background-color: #b08d57;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.apply {
+  text-align: center;
+}
+
+.meme {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.vacancies-title {
+  background-color: #b08d57;
+  font-weight: bold;
+  text-align: center;
+}
+
+.vacancies th, .vacancies td {
+  text-align: center;
+}
+
+.vacancies {
+  width: auto;
+  margin: 0 auto;
+}
+
+.whyus {
+  margin: 0 auto;
+  background-color: #efe9db;
+  width: 75%;
+  padding: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  border: 7px solid #b08d57;
+  border-radius: 10px;
+}
