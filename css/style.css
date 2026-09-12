@@ -214,3 +214,36 @@ table tr:nth-child(even) {
   border-bottom: 1px solid #ccc;
   margin-bottom: 0.5rem;
 }
+
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #b08d57;
+}
+
+.no-border {
+  border-top: none;
+}
+
+.right {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #b08d57;
+}
+
+.left img, .right img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin: 1rem;
+  border: 4px solid #b08d57;
+}
+
+.left p, .right p {
+  width: 50rem;
+  
+}
