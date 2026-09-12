@@ -1,3 +1,5 @@
+/* Temirlan's page styles */
+
 body {
     font-family: Arial, sans-serif;
     color: #2e2e2e;
@@ -118,9 +120,7 @@ table tr:nth-child(even) {
   margin-top: 0.5rem;
   
 }
-/* Я добавил стили для своих страниц и общие стили для нашего сайта
-Тебе надо только добавить стили для своих страниц,
-только так чтоб у нас был один стиль, чтоб цвета совпадали и т.д.*/
+/* Gleb's page styles */
 
 #application-form {
   border: 7px solid #b08d57;
