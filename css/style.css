@@ -241,7 +241,7 @@ table tr:nth-child(even) {
 }
 
 .meme {
-  width: 50%;
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
@@ -322,3 +322,37 @@ table tr:nth-child(even) {
 
 /* 2nd assignment */
 
+.layout {
+  display: grid;
+  grid-template-columns: 750px 1fr;
+  grid-template-rows: auto auto 1fr auto;
+
+  grid-template-areas:
+    "header header"
+    "apply apply"
+    "whyus content"
+    "footer footer";
+
+  min-height: 100vh;
+  gap: 0px;
+}
+
+#main-header {
+  grid-area: header;
+}
+
+.apply {
+  grid-area: apply;
+}
+
+.whyus {
+  grid-area: whyus;
+}
+
+content {
+  grid-area: content;
+}
+
+footer {
+  grid-area: footer;
+}
