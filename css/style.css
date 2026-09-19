@@ -116,10 +116,7 @@ table tr:nth-child(even) {
   margin-top: 0.5rem;
   
 }
-<<<<<<< HEAD
-/* Я добавил стили для своих страниц и общие стили для нашего сайта
-Тебе надо только добавить стили для своих страниц,
-только так чтоб у нас был один стиль, чтоб цвета совпадали и т.д.*/
+
 /* второй асик */
 .card-grid {
   display: flex;
@@ -194,7 +191,8 @@ table tr:nth-child(even) {
 
 .gallery-item:hover .caption {
   opacity: 1;
-=======
+}
+
 /* Gleb's page styles */
 
 #application-form {
@@ -320,6 +318,7 @@ table tr:nth-child(even) {
 
 .left p, .right p {
   width: 50rem;
-  
->>>>>>> aeded462f9b33cac2f283813f59b11927d999293
 }
+
+/* 2nd assignment */
+
