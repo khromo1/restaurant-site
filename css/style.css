@@ -26,17 +26,11 @@ a:hover {
   font-weight: bold;
   color: #7a2e2e;
 }
-.menu-category {
-  margin-bottom: 2.5rem;
-}
-
 .menu-category h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.1rem;
   border-bottom: 2px solid #b08d57;
-  padding-bottom: 0.4rem;
-  margin-bottom: 1rem;
 }
 #main-header {
     background-color:#b08d57 ;
@@ -80,11 +74,6 @@ img {
     height: auto;
     
 }
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-}
 table {
   width: 100%;
   border-collapse: collapse;
@@ -119,13 +108,12 @@ table tr:nth-child(even) {
 
 /* второй асик */
 .card-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
-  flex-wrap: wrap;
 }
 
 .card {
-  flex: 1 1 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -157,10 +145,7 @@ table tr:nth-child(even) {
   font-weight: bold;
 }
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-top: 2rem;
+  width: 100%;
 }
 
 .gallery-item {
@@ -191,6 +176,61 @@ table tr:nth-child(even) {
 
 .gallery-item:hover .caption {
   opacity: 1;
+}
+
+/* assignment 3*/
+.responsive-title {
+  font-size: 2.5rem;
+}
+
+.responsive-subtitle {
+  font-size: 1.75rem;
+}
+
+.responsive-text {
+  font-size: 1rem;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+  .responsive-title {
+    font-size: 2.1rem;
+  }
+
+  .responsive-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .responsive-text {
+    font-size: 0.95rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .responsive-title {
+    font-size: 1.7rem;
+  }
+
+  .responsive-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .responsive-text {
+    font-size: 0.9rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 1rem;
+  }
 }
 
 /* Gleb's page styles */

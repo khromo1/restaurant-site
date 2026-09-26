@@ -1,145 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIlkxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <!--Автор страницы - Темирлан-->
 </head>
 <body>
     <header id="main-header">
         <div class="shapka">Клод <span>Моне</span></div>
-        <nav> 
+        <nav>
             <ul class="nav-menu">
-                <li> <a href="index.html"> Главная </a></li>
+                <li><a href="index.html">Главная</a></li>
                 <li><a href="menu.html">Меню</a></li>
                 <li><a href="about.html">О нас</a></li>
                 <li><a href="join.html">Вакансии</a></li>
             </ul>
         </nav>
-        
     </header>
-    <div class="container">
-        <h1> Меню нашего ресторана </h1>
-        <p> Сезонное меню, которое обновляется каждые три месяца. Все цены указаны в тенге.</p>
 
-        <div class="menu-category">
-            <h2> Закуски </h2>
-            <div class="menu-item">
-                <span>Тартар из говядины с каперсами</span>
-                <span class="price"> 3200 </span>
+    <main class="container py-4 py-lg-5">
+        <h1 class="responsive-title">Меню нашего ресторана</h1>
+        <p class="responsive-text mb-4">Сезонное меню, которое обновляется каждые три месяца. Все цены указаны в тенге.</p>
+
+        <!-- Task 3: Bootstrap Grid, section 1 — two columns -->
+        <section class="row g-4 mb-5" aria-labelledby="menu-sections-title">
+            <div class="col-12 col-md-6 col-lg-6">
+                <h2 id="menu-sections-title" class="responsive-subtitle mb-3">Основное меню</h2>
+
+                <div class="menu-category mb-4">
+                    <h2 class="pb-2 mb-3">Закуски</h2>
+                    <div class="menu-item">
+                        <span>Тартар из говядины с каперсами</span>
+                        <span class="price">3200</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Улитки в чесночном соусе</span>
+                        <span class="price">3800</span>
+                    </div>
+                </div>
+
+                <div class="menu-category mb-4">
+                    <h2 class="pb-2 mb-3">Основные блюда</h2>
+                    <div class="menu-item">
+                        <span>Утиная грудка с апельсиновым соусом</span>
+                        <span class="price">6500</span>
+                    </div>
+                    <div class="menu-item">
+                        <span>Ризотто с белыми грибами</span>
+                        <span class="price">5200</span>
+                    </div>
+                </div>
+
+                <div class="menu-category mb-4">
+                    <h2 class="pb-2 mb-3">Десерты</h2>
+                    <div class="menu-item">
+                        <span>Крем-брюле с ванилью</span>
+                        <span class="price">2600</span>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h2 class="pb-2 mb-3">Напитки</h2>
+                    <ul>
+                        <li>Бокал вина — 3 500 ₸</li>
+                        <li>Свежевыжатый сок — 1 800 ₸</li>
+                        <li>Эспрессо — 1 200 ₸</li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu-item">
-                <span>Улитки в чесночном соусе</span>
-                <span class="price"> 3800 </span>
+
+            <div class="col-12 col-md-6 col-lg-6">
+                <h2 class="responsive-subtitle mb-3">Сеты для компании</h2>
+                <div class="table-responsive">
+                    <table class="mb-0">
+                        <thead>
+                            <tr>
+                                <th>Сет</th>
+                                <th>Состав</th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>«Импрессион»</td>
+                                <td>Тартар, утка, тарт Татен</td>
+                                <td class="price">15900</td>
+                            </tr>
+                            <tr>
+                                <td>«Живопись»</td>
+                                <td>Суп, ризотто, крем-брюле</td>
+                                <td class="price">18400</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="menu-category">
-            <h2> Основные блюда </h2>
-            <div class="menu-item">
-                <span>Утиная грудка с апельсиновым соусом</span>
-                <span class="price">6500</span>
+        <!-- Task 3: Bootstrap Grid, section 2 — three columns -->
+        <section aria-labelledby="gallery-title">
+            <h2 id="gallery-title" class="responsive-subtitle mb-3">Галерея блюд</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 gallery">
+                <div class="col"><div class="gallery-item h-100"><img src="images/dish1.jpg" alt="Тартар из говядины"><span class="caption">Тартар из говядины</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img src="images/dish2.jpg" alt="Луковый суп по-парижски"><span class="caption">Луковый суп по-парижски</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img src="images/dish3.jpg" alt="Escargot — улитки в чесночном масле"><span class="caption">Escargot</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img src="images/dish4.jpg" alt="Утиная грудка с апельсиновым соусом"><span class="caption">Утиная грудка</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img src="images/dish5.jpg" alt="Стейк рибай с трюфельным пюре"><span class="caption">Стейк рибай</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img src="images/dish6.jpg" alt="Ризотто с белыми грибами"><span class="caption">Ризотто с грибами</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img src="images/dish7.jpg" alt="Крем-брюле с ванилью"><span class="caption">Крем-брюле</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img src="images/dish8.jpg" alt="Тарт Татен с яблоками"><span class="caption">Тарт Татен</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img src="images/dish9.jpg" alt="Интерьер ресторана"><span class="caption">Атмосфера бистро</span></div></div>
             </div>
-            <div class="menu-item">
-                <span> Ризотто с белыми грибами </span>
-                <span class="price">5200</span>
-            </div>
-        </div>
+        </section>
+    </main>
 
-        <div class="menu-category">
-            <h2>Десерты</h2>
-            <div class="menu-item">
-                <span>Крем-брюле с ванилью</span>
-                <span class="price">2600</span>
-            </div>
-        </div>
-
-        <div class="menu-category">
-            <h2>Напитки</h2>
-            <ul>
-                <li>Бокал вина — 3 500 ₸</li>
-                <li>Свежевыжатый сок — 1 800 ₸</li>
-                <li>Эспрессо — 1 200 ₸</li>
-            </ul>
-        </div>
-
-        <h2>Сеты для компании</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th> Сет </th>
-                    <th> Состав </th>
-                    <th> Цена </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>«Импрессион»</td>
-                    <td>Тартар, утка, тарт Татен</td>
-                    <td class="price">15900</td>
-                </tr>
-                <tr>
-                    <td>«Живопись»</td>
-                    <td>Суп, ризотто, крем-брюле</td>
-                    <td class="price">18400</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2>Галерея блюд</h2>
-<div class="gallery">
-
-  <div class="gallery-item">
-    <img src="images/dish1.jpg" alt="Тартар из говядины">
-    <span class="caption">Тартар из говядины</span>
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/dish2.jpg" alt="Луковый суп по-парижски">
-    <span class="caption">Луковый суп по-парижски</span>
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/dish3.jpg" alt="Escargot — улитки в чесночном масле">
-    <span class="caption">Escargot</span>
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/dish4.jpg" alt="Утиная грудка с апельсиновым соусом">
-    <span class="caption">Утиная грудка</span>
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/dish5.jpg" alt="Стейк рибай с трюфельным пюре">
-    <span class="caption">Стейк рибай</span>
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/dish6.jpg" alt="Ризотто с белыми грибами">
-    <span class="caption">Ризотто с грибами</span>
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/dish7.jpg" alt="Крем-брюле с ванилью">
-    <span class="caption">Крем-брюле</span>
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/dish8.jpg" alt="Тарт Татен с яблоками">
-    <span class="caption">Тарт Татен</span>
-  </div>
-
-  <div class="gallery-item">
-    <img src="images/dish9.jpg" alt="Интерьер ресторана">
-    <span class="caption">Атмосфера бистро</span>
-  </div>
-
-</div>
-    </div>
-    <footer>
+    <footer class="py-3">
         <p>Разработчики: Глеб Минор, Темирлан Тыныбеков</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

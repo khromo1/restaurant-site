@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claude Monet Main Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIlkxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <!--Автор страницы - Темирлан-->
-    
+</head>
 <body>
     <header id="main-header">
         <div class="shapka">Клод <span>Моне</span></div>
-        <nav> 
+        <nav>
             <ul class="nav-menu">
-                <li> <a href="index.html"> Главная </a></li>
+                <li><a href="index.html">Главная</a></li>
                 <li><a href="menu.html">Меню</a></li>
                 <li><a href="about.html">О нас</a></li>
                 <li><a href="join.html">Вакансии</a></li>
             </ul>
         </nav>
-        
     </header>
-    <div class="container">
-        <h1> Claude Monet </h1>
-        <p> «Клод Моне» — ресторан французской кухни в самом центре города. Мы соединяем классические техники с сезонными продуктами и подаём блюда так же тщательно, как художник кладёт мазок на полотно. </p>
-        <div class="page-grid">
-        <h2> О ресторане </h2>
-        <p> Ресторан открылся с идеей вернуть гостям атмосферу настоящего французского бистро: тёплый свет, аромат свежего хлеба и внимание к каждой детали. Наша команда — это шеф-повар с классическим французским образованием, сомелье, знающий каждую бутылку в погребе, и официанты, которые помнят постоянных гостей по имени.
 
-За восемь лет работы мы собрали меню, в котором сезонность важнее моды, а вкус блюда важнее его вида в объективе телефона — хотя выглядят они, признаем, тоже неплохо.</p>
-        <h2> Почему выбирают именно нас? </h2>
-        <ul>
-            <li> Уютная атмосфера</li>
-            <li> Вкусная и аутентичная французская кухня</li>
-            <li> Сервис на высшем уровне </li>
-        </ul>
-        </div>
-        <div class="main-img-wrap">
+    <main class="container py-4 py-lg-5">
+        <h1 class="responsive-title">Claude Monet</h1>
+        <p class="responsive-text mb-4">«Клод Моне» — ресторан французской кухни в самом центре города. Мы соединяем классические техники с сезонными продуктами и подаём блюда так же тщательно, как художник кладёт мазок на полотно.</p>
+
+        <!-- Task 3: Bootstrap Grid, section 1 — two columns -->
+        <section class="row g-4 mb-4" aria-labelledby="about-restaurant-title">
+            <div class="col-12 col-md-6 col-lg-6">
+                <h2 id="about-restaurant-title" class="responsive-subtitle">О ресторане</h2>
+                <p class="responsive-text">Ресторан открылся с идеей вернуть гостям атмосферу настоящего французского бистро: тёплый свет, аромат свежего хлеба и внимание к каждой детали. Наша команда — это шеф-повар с классическим французским образованием, сомелье, знающий каждую бутылку в погребе, и официанты, которые помнят постоянных гостей по имени.</p>
+                <p class="responsive-text">За восемь лет работы мы собрали меню, в котором сезонность важнее моды, а вкус блюда важнее его вида в объективе телефона — хотя выглядят они, признаем, тоже неплохо.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <h2 class="responsive-subtitle">Почему выбирают именно нас?</h2>
+                <ul class="responsive-text">
+                    <li>Уютная атмосфера</li>
+                    <li>Вкусная и аутентичная французская кухня</li>
+                    <li>Сервис на высшем уровне</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="main-img-wrap mb-4">
             <img src="images/claude_monet.jpg" alt="Клод Моне" class="main-img">
-            <p class="address"> ул. Спиридоновка 25/20, строение 1</p>
+            <p class="address">ул. Спиридоновка 25/20, строение 1</p>
         </div>
-    </div>
-    <div class="card-grid">
-  <div class="card">
-    <img src="images/breakfast.jpg" alt="Завтрак художника">
-    <h3>Завтрак художника</h3>
-    <p>Круассаны, омлет с трюфелем и свежевыжатый сок — с 9:00 до 12:00.</p>
-    <a href="menu.html" class="btn">Подробнее</a>
-  </div>
-  <div class="card">
-    <img src="images/lunch.jpg" alt="Бизнес-ланч">
-    <h3>Бизнес-ланч</h3>
-    <p>Три перемены блюд за 40 минут, будни с 12:00 до 16:00.</p>
-    <a href="menu.html" class="btn">Подробнее</a>
-  </div>
-  <div class="card">
-    <img src="images/evening.jpg" alt="Вечер в бистро">
-    <h3>Вечер в бистро</h3>
-    <p>Полное меню, живая музыка по пятницам и субботам.</p>
-    <a href="menu.html" class="btn">Подробнее</a>
-  </div>
-</div>
-    <h2>О разработчике</h2>
-    <div class="card">
-        <p>Меня зовут Темирлан, я студент группы SE-2514, Astana IT University. В этом проекте я разработал страницы «Главная» и «Меню».</p>
-    </div>
-    <footer>
+
+        <!-- Task 2: CSS-only responsive card group; no Bootstrap grid classes -->
+        <section aria-labelledby="specials-title" class="mb-4">
+            <h2 id="specials-title" class="responsive-subtitle mb-3">Специальные предложения</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="images/breakfast.jpg" alt="Завтрак художника">
+                    <h3>Завтрак художника</h3>
+                    <p>Круассаны, омлет с трюфелем и свежевыжатый сок — с 9:00 до 12:00.</p>
+                    <a href="menu.html" class="btn">Подробнее</a>
+                </div>
+                <div class="card">
+                    <img src="images/lunch.jpg" alt="Бизнес-ланч">
+                    <h3>Бизнес-ланч</h3>
+                    <p>Три перемены блюд за 40 минут, будни с 12:00 до 16:00.</p>
+                    <a href="menu.html" class="btn">Подробнее</a>
+                </div>
+                <div class="card">
+                    <img src="images/evening.jpg" alt="Вечер в бистро">
+                    <h3>Вечер в бистро</h3>
+                    <p>Полное меню, живая музыка по пятницам и субботам.</p>
+                    <a href="menu.html" class="btn">Подробнее</a>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="responsive-subtitle mb-3">О разработчике</h2>
+        <div class="card p-3 mb-4">
+            <p>Меня зовут Темирлан, я студент группы SE-2514, Astana IT University. В этом проекте я разработал страницы «Главная» и «Меню».</p>
+        </div>
+    </main>
+
+    <footer class="py-3">
         <p>Разработчики: Глеб Минор, Темирлан Тыныбеков</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
