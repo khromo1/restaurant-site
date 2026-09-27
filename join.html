@@ -6,21 +6,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Join</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
     <!--Автор страницы - Глеб-->
+</head>
     
 <body>
     <div class="layout">
         <header id="main-header">
-            <div class="shapka">Клод <span>Моне</span></div>
-            <nav> 
-                <ul class="nav-menu">
-                    <li> <a href="index.html"> Главная </a></li>
-                    <li><a href="menu.html">Меню</a></li>
-                    <li><a href="about.html">О нас</a></li>
-                    <li><a href="join.html">Вакансии</a></li>
-                </ul>
-            </nav>
+            <img src="images/logo.png" class="logo">
         </header>
+
+        <nav class="navbar navbar-expand-lg custom-background" id="nav">
+            <div class="container">
+                <a class="navbar-brand text-white" href="index.html">
+                    Клод<span id="diff-color-cpan">Моне</span>
+                </a>
+
+                <div class="navbar-nav">
+                    <a class="nav-link text-white" href="index.html">
+                        Главная
+                    </a>
+                    <a class="nav-link text-white" href="menu.html">
+                        Меню
+                    </a>
+                    <a class="nav-link text-white" href="about.html">
+                        О нас
+                    </a>
+                    <a class="nav-link text-white" href="join.html">
+                        Вакансии
+                    </a>
+                </div>
+            </div>
+        </nav>
+
         <div class="apply"><h1>Ищете работу? Присоединяйтесь к нам! Заполните форму, чтобы подать заявку.</h1></div>
 
         <aside class="whyus">
@@ -95,5 +115,7 @@
             <p>Разработчики: Глеб Минор, Темирлан Тыныбеков</p>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
