@@ -6,6 +6,7 @@
     <title>Menu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIlkxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/popup.js" defer></script>
     <!--Автор страницы - Темирлан-->
 </head>
 <body>
@@ -99,6 +100,7 @@
                 </div>
             </div>
         </section>
+        <button id="open-popup" class="btn">Забронировать стол</button>
 
         <!-- Task 3: Bootstrap Grid, section 2 — three columns -->
         <section aria-labelledby="gallery-title">
@@ -116,7 +118,24 @@
             </div>
         </section>
     </main>
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+        <button class="popup-close" id="close-popup">&times;</button>
+        <h2>Бронирование стола</h2>
+        <form id="booking-form">
+            <label for="b-name">Имя</label>
+            <input type="text" id="b-name" required>
 
+            <label for="b-phone">Телефон</label>
+            <input type="tel" id="b-phone" required>
+
+            <label for="b-date">Дата</label>
+            <input type="date" id="b-date" required>
+
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </div>
+</div>
     <footer class="py-3">
         <p>Разработчики: Глеб Минор, Темирлан Тыныбеков</p>
     </footer>
