@@ -1,0 +1,234 @@
+body {
+    color: #2e2e2e;
+    background-color: #f7f3ec;
+}
+
+a {
+    color:#7a2e2e
+}
+
+a:hover {
+    color:#b08d57
+}
+
+.menu-item {
+    border-bottom: 1px solid #ccc;
+}
+.price {
+  color: #7a2e2e;
+}
+.menu-category h2 {
+  border-bottom: 2px solid #b08d57;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+}
+
+#main-header {
+    background-color:#b08d57 ;
+    border-bottom: 3px solid #1c1e2e;
+}
+
+.shapka {
+    color: #f7f3ec
+}
+
+.shapka span {
+  color: #1c1e2e;
+}
+
+.nav-menu a {
+    color: #f7f3ec;
+}
+
+.nav-menu a:hover {
+    color: #1c1e2e;
+}
+
+table th,
+table td {
+  border: 1px solid #d8d0bd;
+}
+
+table th {
+  background-color: #b08d57;
+  color: #1c1e2e;
+}
+
+table tr:nth-child(even) {
+  background-color: #efe9db;
+}
+.main-img {
+    border: 4px solid #b08d57
+}
+
+.address {
+  color: #7a2e2e;
+}
+
+.card {
+  border: 1px solid #ccc;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+  background-color: #b08d57;
+  color: #1c1e2e;
+}
+
+.gallery-item .caption {
+  background-color: rgba(28, 30, 46, 0.8);
+  color: #f7f3ec;
+}
+
+#application-form {
+  border: 7px solid #b08d57;
+  background-color: #efe9db;
+}
+
+#application-form h2 {
+  color: #b08d57;
+}
+
+#application-form input,
+#application-form textarea,
+#application-form select {
+  border: 1px solid white;
+}
+
+#application-form button {
+  background-color: #b08d57;
+  color: white;
+}
+
+#application-form button {
+  background-color: #b08d57;
+  color: white;
+}
+
+.vacancies-title {
+  background-color: #b08d57;
+}
+
+.whyus {
+  background-color: #efe9db;
+}
+
+.about h1 {
+  border-bottom: 2px solid #b08d57;
+}
+
+.about h2 {
+  border-bottom: 1px solid #ccc;
+}
+
+.left {
+  border-top: 2px solid #b08d57;
+}
+
+.right {
+  border-top: 2px solid #b08d57;
+}
+
+.left img, .right img {
+  border: 4px solid #b08d57;
+}
+
+.call {
+  background-color: #b08d57;
+  color: white;
+}
+
+.review .review-card:hover {
+  border-color: #b08d57;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #d8d0bd;
+}
+
+.accordion-question {
+  color: #1c1e2e;
+}
+
+.accordion-question::after {
+  color: #b08d57;
+}
+
+#open-popup {
+  background-color: #b08d57;
+  color: #1c1e2e;
+}
+
+.popup-overlay {
+  background-color: rgba(28, 30, 46, 0.7);
+}
+
+.popup-content {
+  background-color: #f7f3ec;
+  border: 3px solid #b08d57;
+}
+
+.popup-close {
+  color: #1c1e2e;
+}
+
+#booking-form input {
+  border: 1px solid #d8d0bd;
+}
+
+#booking-form input:focus {
+  border-color: #b08d57;
+}
+
+.custom-background {
+  background-color: #b08d57;
+}
+
+#diff-color-cpan {
+  color: #1c1e2e;
+}
+
+.btn {
+  background-color: #b08d57;
+}
+
+.theme-btn {
+  border: 2px solid #ffffff;
+}
+
+.theme-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+html.dark {
+    filter: invert(0.9) hue-rotate(180deg);
+}
+
+html.dark img,
+html.dark video {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+html.dark .logo,
+html.dark .theme-icon {
+    filter: none;
+}
+
+.error {
+    color: #dc3545;
+}
+
+.input-error {
+    border-color: #dc3545;
+}
+
+#form-success {
+    color: #198754;
+}
