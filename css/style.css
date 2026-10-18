@@ -497,7 +497,12 @@ footer {
 }
 
 /* popup */
-
+#open-popup {
+  background-color: #b08d57;
+  color: #1c1e2e;
+  border: none;
+  margin-bottom: 2rem;
+}
 .popup-overlay {
   display: none;
   position: fixed;
