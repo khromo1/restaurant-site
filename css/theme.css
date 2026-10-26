@@ -208,27 +208,35 @@ table tr:nth-child(even) {
 }
 
 html.dark {
-    filter: invert(0.9) hue-rotate(180deg);
+  filter: invert(0.9) hue-rotate(180deg);
 }
 
 html.dark img,
 html.dark video {
-    filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg);
 }
 
 html.dark .logo,
 html.dark .theme-icon {
-    filter: none;
+  filter: none;
 }
 
 .error {
-    color: #dc3545;
+  color: #dc3545;
 }
 
 .input-error {
-    border-color: #dc3545;
+  border-color: #dc3545;
 }
 
 #form-success {
-    color: #198754;
+  color: #198754;
+}
+
+#stars .star.active {
+  color: var(--bs-warning);
+}
+
+#stars .star {
+  color: var(--bs-secondary-color);
 }
