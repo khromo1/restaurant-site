@@ -547,3 +547,42 @@ footer {
   outline: 3px solid var(--bs-warning);
   outline-offset: 2px;
 }
+
+
+/* Assignment 5 — Task 3: animations and interactive buttons */
+
+.offer-button {
+    margin-top: 10px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #8b6b4a;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.offer-button:hover {
+    background-color: #65482f;
+    transform: scale(1.05);
+}
+
+.offer-selected {
+    animation: offerPulse 0.5s ease;
+}
+
+/* assignment 5 */
+
+@keyframes offerPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
