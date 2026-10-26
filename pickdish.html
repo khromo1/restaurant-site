@@ -67,7 +67,118 @@
          </div>
     </nav>
 
-    
+    <main class="container my-5">
+
+        <h1 class="mb-2">Подобрать блюдо</h1>
+        <p class="text-body-secondary mb-4">
+            Ответьте на вопросы, и мы подберем блюда, которые вам подходят.
+            Ответы можно менять в любой момент.
+        </p>
+
+        <form id="quiz-form">
+
+            <fieldset class="mb-4">
+                <legend class="fs-5">Какое у вас настроение?</legend>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mood" id="mood-great" value="great">
+                    <label class="form-check-label" for="mood-great">Отличное</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mood" id="mood-good" value="good">
+                    <label class="form-check-label" for="mood-good">Хорошее</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mood" id="mood-ok" value="ok">
+                    <label class="form-check-label" for="mood-ok">Пойдёт</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mood" id="mood-meh" value="meh">
+                    <label class="form-check-label" for="mood-meh">Бывало и лучше</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mood" id="mood-bad" value="bad">
+                    <label class="form-check-label" for="mood-bad">Плохое</label>
+                </div>
+            </fieldset>
+ 
+            <fieldset class="mb-4">
+                <legend class="fs-5">Что должно быть в блюде?</legend>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="filling" id="filling-meat" value="meat">
+                    <label class="form-check-label" for="filling-meat">Мясо</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="filling" id="filling-snails" value="snails">
+                    <label class="form-check-label" for="filling-snails">Улитки</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="filling" id="filling-mushrooms" value="mushrooms">
+                    <label class="form-check-label" for="filling-mushrooms">Грибы</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="filling" id="filling-dessert" value="dessert">
+                    <label class="form-check-label" for="filling-dessert">Десерт</label>
+                </div>
+            </fieldset>
+ 
+            <fieldset class="mb-4">
+                <legend class="fs-5">Какой вкус хочется?</legend>
+
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="taste" id="taste-salty" value="salty">
+                    <label class="form-check-label" for="taste-salty">Солёное</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="taste" id="taste-tangy" value="tangy">
+                    <label class="form-check-label" for="taste-tangy">Кисло-сладкое</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="taste" id="taste-sweet" value="sweet">
+                    <label class="form-check-label" for="taste-sweet">Сладкое</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="taste" id="taste-soft" value="soft">
+                    <label class="form-check-label" for="taste-soft">Нежное</label>
+                </div>
+            </fieldset>
+ 
+            <fieldset class="mb-4">
+                <legend class="fs-5">Насколько вы голодны?</legend>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="hunger" id="hunger-none" value="none">
+                    <label class="form-check-label" for="hunger-none">Не голоден</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="hunger" id="hunger-hungry" value="hungry">
+                    <label class="form-check-label" for="hunger-hungry">Голоден</label>
+                </div>
+                
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="hunger" id="hunger-very" value="very">
+                    <label class="form-check-label" for="hunger-very">Очень голоден</label>
+                </div>
+            </fieldset>
+ 
+            <button type="button" id="reset-btn" class="btn btn-outline-secondary">Сбросить ответы</button>
+
+        </form>
+
+    </main>
 
     <footer class="py-3">
         <p>Разработчики: Глеб Минор, Темирлан Тыныбеков</p>
