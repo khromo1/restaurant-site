@@ -19,6 +19,11 @@
 
     <script src="js/popup.js" defer></script>
     <!--Автор страницы - Темирлан-->
+
+    <!-- подключил скрипты-->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ux.js"></script>
 </head>
 <body>
     <header id="main-header">
@@ -91,6 +96,14 @@
                     </div>
                 </div>
 
+                
+                <div class="search-wrap">
+                    <input type="text" id="menu-search" class="search-input" placeholder="Найти блюдо…" autocomplete="off">
+                    <ul id="suggestions" class="suggestions"></ul>
+                </div>
+                <p id="no-results" class="no-results">Ничего не найдено</p>
+
+
                 <div class="menu-category mb-4">
                     <h2 class="pb-2 mb-3">Основные блюда</h2>
                     <div class="menu-item">
@@ -151,18 +164,19 @@
         <button id="open-popup" class="btn">Забронировать стол</button>
 
         <!-- Task 3: Bootstrap Grid, section 2 — three columns -->
+        <!-- Task 9 (jQuery): lazy loading — real path is in data-src, src is a placeholder -->
         <section aria-labelledby="gallery-title">
             <h2 id="gallery-title" class="responsive-subtitle mb-3">Галерея блюд</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 gallery">
-                <div class="col"><div class="gallery-item h-100"><img src="images/dish1.jpg" alt="Тартар из говядины"><span class="caption">Тартар из говядины</span></div></div>
-                <div class="col"><div class="gallery-item h-100"><img src="images/dish2.jpg" alt="Луковый суп по-парижски"><span class="caption">Луковый суп по-парижски</span></div></div>
-                <div class="col"><div class="gallery-item h-100"><img src="images/dish3.jpg" alt="Escargot — улитки в чесночном масле"><span class="caption">Escargot</span></div></div>
-                <div class="col"><div class="gallery-item h-100"><img src="images/dish4.jpg" alt="Утиная грудка с апельсиновым соусом"><span class="caption">Утиная грудка</span></div></div>
-                <div class="col"><div class="gallery-item h-100"><img src="images/dish5.jpg" alt="Стейк рибай с трюфельным пюре"><span class="caption">Стейк рибай</span></div></div>
-                <div class="col"><div class="gallery-item h-100"><img src="images/dish6.jpg" alt="Ризотто с белыми грибами"><span class="caption">Ризотто с грибами</span></div></div>
-                <div class="col"><div class="gallery-item h-100"><img src="images/dish7.jpg" alt="Крем-брюле с ванилью"><span class="caption">Крем-брюле</span></div></div>
-                <div class="col"><div class="gallery-item h-100"><img src="images/dish8.jpg" alt="Тарт Татен с яблоками"><span class="caption">Тарт Татен</span></div></div>
-                <div class="col"><div class="gallery-item h-100"><img src="images/dish9.jpg" alt="Интерьер ресторана"><span class="caption">Атмосфера бистро</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/dish1.jpg" alt="Тартар из говядины"><span class="caption">Тартар из говядины</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/dish2.jpg" alt="Луковый суп по-парижски"><span class="caption">Луковый суп по-парижски</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/dish3.jpg" alt="Escargot — улитки в чесночном масле"><span class="caption">Escargot</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/dish4.jpg" alt="Утиная грудка с апельсиновым соусом"><span class="caption">Утиная грудка</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/dish5.jpg" alt="Стейк рибай с трюфельным пюре"><span class="caption">Стейк рибай</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/dish6.jpg" alt="Ризотто с белыми грибами"><span class="caption">Ризотто с грибами</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/dish7.jpg" alt="Крем-брюле с ванилью"><span class="caption">Крем-брюле</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/dish8.jpg" alt="Тарт Татен с яблоками"><span class="caption">Тарт Татен</span></div></div>
+                <div class="col"><div class="gallery-item h-100"><img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/dish9.jpg" alt="Интерьер ресторана"><span class="caption">Атмосфера бистро</span></div></div>
             </div>
         </section>
     </main>
