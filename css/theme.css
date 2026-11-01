@@ -249,4 +249,8 @@ html.dark .theme-icon {
   --spinner-color: #f5ebe0;
   --spinner-track: rgba(245, 235, 224, 0.35);
   --btn-disabled-bg: #a68a6d;
+
+  --toast-bg: #5c4033;
+  --toast-text: #f5ebe0;
+  --toast-border: #c19a6b;
 }

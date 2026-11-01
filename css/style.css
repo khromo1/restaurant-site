@@ -649,3 +649,23 @@ img.lazy.loaded { opacity: 1; }
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
+#toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toast {
+  display: none;
+  padding: 12px 20px;
+  background: var(--toast-bg);
+  color: var(--toast-text);
+  border-left: 4px solid var(--toast-border);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}

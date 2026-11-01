@@ -1,3 +1,16 @@
+function showToast(message) {
+    var $toast = $("<div class='toast'></div>").text(message);
+
+    $("#toast-container").append($toast);
+
+    $toast
+        .fadeIn(300)
+        .delay(2500)
+        .fadeOut(500, function () {
+            $(this).remove();
+        });
+}
+
 function progressBar() {
     function updateProgressBar() {
         var scrollTop = $(window).scrollTop();
@@ -68,6 +81,8 @@ function initSubmitSpinner() {
       $btn.prop("disabled", false).removeClass("loading");
       $text.text("Отправить форму");
       $form[0].reset();
+
+      showToast("Форма успешно отправлена");
     }, 2000);
   });
 }
