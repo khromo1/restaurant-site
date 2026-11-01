@@ -253,4 +253,11 @@ html.dark .theme-icon {
   --toast-bg: #5c4033;
   --toast-text: #f5ebe0;
   --toast-border: #c19a6b;
+
+  --copy-btn-bg: #e8d9c5;
+  --copy-btn-color: #5c4033;
+  --copy-btn-hover: #d9b99b;
+  --copy-success: #4a7c3a;
+  --tooltip-bg: #5c4033;
+  --tooltip-text: #f5ebe0;
 }

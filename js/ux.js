@@ -87,8 +87,27 @@ function initSubmitSpinner() {
   });
 }
 
+function initCopyButtons() {
+  $(".copy-btn").text("📋");
+
+  $(".copy-btn").on("click", function () {
+    var $btn = $(this);
+    var text = $btn.siblings(".copy-text").text().trim();
+
+    navigator.clipboard.writeText(text).then(function () {
+      $btn.addClass("copied").text("✔");
+      showToast("Скопировано в буфер обмена");
+
+      setTimeout(function () {
+        $btn.removeClass("copied").text("📋");
+      }, 2000);
+    });
+  });
+}
+
 $(document).ready(function () {
     progressBar();
     initCounters();
     initSubmitSpinner();
+    initCopyButtons();
 });

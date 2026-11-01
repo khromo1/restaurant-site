@@ -669,3 +669,43 @@ img.lazy.loaded { opacity: 1; }
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
+
+.copy-btn {
+  position: relative;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 6px;
+  background: var(--copy-btn-bg);
+  color: var(--copy-btn-color);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.copy-btn:hover {
+  background: var(--copy-btn-hover);
+}
+
+.copy-btn.copied {
+  color: var(--copy-success);
+}
+
+.copy-btn::after {
+  content: "Скопировано!";
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--tooltip-bg);
+  color: var(--tooltip-text);
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.copy-btn.copied::after {
+  opacity: 1;
+}
