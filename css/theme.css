@@ -245,4 +245,8 @@ html.dark .theme-icon {
   --progress-track: rgba(92, 64, 51, 0.12);
   --progress-color: #8b5a2b;
   --progress-glow: rgba(139, 90, 43, 0.6);
+
+  --spinner-color: #f5ebe0;
+  --spinner-track: rgba(245, 235, 224, 0.35);
+  --btn-disabled-bg: #a68a6d;
 }

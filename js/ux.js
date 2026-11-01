@@ -51,7 +51,29 @@ function initCounters() {
   checkCounters();
 }
 
+function initSubmitSpinner() {
+  var $form = $("#application-form");
+  var $btn = $("#submit-btn");
+  var $text = $btn.find(".btn-text");
+
+  if ($form.length === 0) return;
+
+  $form.on("submit", function (e) {
+    e.preventDefault();
+
+    $btn.prop("disabled", true).addClass("loading");
+    $text.text("Отправляем...");
+
+    setTimeout(function () {
+      $btn.prop("disabled", false).removeClass("loading");
+      $text.text("Отправить форму");
+      $form[0].reset();
+    }, 2000);
+  });
+}
+
 $(document).ready(function () {
     progressBar();
     initCounters();
+    initSubmitSpinner();
 });

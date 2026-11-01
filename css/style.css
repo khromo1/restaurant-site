@@ -624,3 +624,28 @@ img.lazy.loaded { opacity: 1; }
   box-shadow: 0 0 10px var(--progress-glow);
   transition: width 0.1s ease-out;
 }
+
+.spinner {
+  display: none;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  border: 2px solid var(--spinner-track);
+  border-top-color: var(--spinner-color);
+  border-radius: 50%;
+  vertical-align: middle;
+  animation: spin 0.8s linear infinite;
+}
+
+#submit-btn.loading .spinner {
+  display: inline-block;
+}
+
+#submit-btn:disabled {
+  background: var(--btn-disabled-bg);
+  cursor: not-allowed;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
