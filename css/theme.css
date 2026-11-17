@@ -96,9 +96,6 @@ input:focus, textarea:focus, select:focus, .form-control:focus, .form-select:foc
 .popup-close { color: var(--site-text); }
 .gallery-item { background-color: var(--site-surface-soft); }
 .gallery-item .caption { background: rgba(20, 22, 27, .86); color: #fff; }
-img.lazy { opacity: 0; transition: opacity .35s ease; }
-img.lazy.loaded { opacity: 1; }
-img.lazy.image-load-error { opacity: 1; }
 
 /* Legacy theme tokens used by progress, toast and helper UI. */
 :root {
@@ -138,3 +135,54 @@ html.dark {
 #stars .star.active { color: var(--bs-warning); }
 #stars .star { color: var(--site-muted); }
 #form-success { color: #198754; }
+
+
+/* Consistent light/dark palette overrides for legacy and Bootstrap components. */
+:root {
+  --site-bg: #f7f3ec; --site-surface: #fffdf8; --site-surface-soft: #efe9db;
+  --site-text: #29251f; --site-muted: #6d655a; --site-line: #d8d0bd;
+  --site-input: #ffffff; --site-accent: #b08d57; --site-accent-text: #1c1e2e;
+}
+html.dark {
+  color-scheme: dark;
+  --site-bg: #17191d; --site-surface: #22262c; --site-surface-soft: #2b3038;
+  --site-text: #f1eee8; --site-muted: #c0b9ad; --site-line: #454b55;
+  --site-input: #1c2026; --site-accent: #c6a16a; --site-accent-text: #17191d;
+}
+html, body { background-color: var(--site-bg) !important; color: var(--site-text); }
+html.dark body, html.dark main, html.dark section, html.dark article, html.dark aside,
+html.dark .container, html.dark .container-fluid { color: var(--site-text); }
+html.dark .bg-white, html.dark .bg-light, html.dark .bg-body, html.dark .bg-body-tertiary,
+html.dark .card, html.dark .list-group-item, html.dark .dropdown-menu,
+html.dark .modal-content, html.dark .offcanvas, html.dark .accordion-item,
+html.dark .table, html.dark .table-responsive, html.dark .menu-category,
+html.dark .gallery-item, html.dark .review-card, html.dark .whyus,
+html.dark .left, html.dark .right, html.dark .popup-content, html.dark #application-form,
+html.dark .auth-card, html.dark .suggestions {
+  background-color: var(--site-surface) !important; color: var(--site-text) !important;
+  border-color: var(--site-line) !important;
+}
+html.dark .menu-category h2, html.dark .menu-item, html.dark .menu-category li,
+html.dark .menu-category p, html.dark .menu-category span, html.dark table,
+html.dark table td, html.dark .accordion-answer, html.dark .about,
+html.dark .responsive-text, html.dark .responsive-title, html.dark .responsive-subtitle,
+html.dark label, html.dark p, html.dark li { color: var(--site-text); }
+html.dark .table, html.dark table { --bs-table-bg: var(--site-surface); --bs-table-color: var(--site-text);
+  --bs-table-striped-bg: var(--site-surface-soft); --bs-table-striped-color: var(--site-text);
+  border-color: var(--site-line); }
+html.dark .table thead th, html.dark table th { background: var(--site-accent) !important; color: var(--site-accent-text) !important; }
+html.dark input, html.dark textarea, html.dark select, html.dark .form-control,
+html.dark .form-select, html.dark .search-input { background: var(--site-input) !important;
+  color: var(--site-text) !important; border-color: var(--site-line) !important; }
+html.dark input::placeholder, html.dark textarea::placeholder { color: var(--site-muted) !important; }
+html.dark .text-dark { color: var(--site-text) !important; }
+html.dark .text-muted { color: var(--site-muted) !important; }
+html.dark .border, html.dark .border-top, html.dark .border-bottom { border-color: var(--site-line) !important; }
+html.dark .navbar .navbar-nav .nav-link { color: #fff !important; }
+html.dark .custom-background, html.dark #main-header { background-color: #9b784d !important; }
+html.dark .gallery-item { background-color: var(--site-surface-soft) !important; }
+html.dark .gallery-item img { opacity: 1 !important; filter: none !important; }
+html.dark img, html.dark video { filter: none !important; }
+.gallery-item img { display: block; width: 100%; height: 220px; object-fit: cover; opacity: 1; }
+.gallery-item { height: 100%; border: 1px solid var(--site-line); border-radius: .75rem; overflow: hidden; box-shadow: var(--site-shadow); }
+.gallery-item .caption { opacity: 1; position: static; display: block; background: var(--site-surface); color: var(--site-text); padding: .7rem; }
