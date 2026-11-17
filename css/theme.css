@@ -1,259 +1,116 @@
-body {
-    color: #2e2e2e;
-    background-color: #f7f3ec;
-}
-
-a {
-    color:#7a2e2e
-}
-
-a:hover {
-    color:#b08d57
-}
-
-.menu-item {
-    border-bottom: 1px solid #ccc;
-}
-.price {
-  color: #7a2e2e;
-}
-.menu-category h2 {
-  border-bottom: 2px solid #b08d57;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto;
-  width: 20%;
-}
-
-#main-header {
-    background-color:#b08d57 ;
-    border-bottom: 3px solid #1c1e2e;
-}
-
-.shapka {
-    color: #f7f3ec
-}
-
-.shapka span {
-  color: #1c1e2e;
-}
-
-.nav-menu a {
-    color: #f7f3ec;
-}
-
-.nav-menu a:hover {
-    color: #1c1e2e;
-}
-
-table th,
-table td {
-  border: 1px solid #d8d0bd;
-}
-
-table th {
-  background-color: #b08d57;
-  color: #1c1e2e;
-}
-
-table tr:nth-child(even) {
-  background-color: #efe9db;
-}
-.main-img {
-    border: 4px solid #b08d57
-}
-
-.address {
-  color: #7a2e2e;
-}
-
-.card {
-  border: 1px solid #ccc;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.btn {
-  background-color: #b08d57;
-  color: #1c1e2e;
-}
-
-.gallery-item .caption {
-  background-color: rgba(28, 30, 46, 0.8);
-  color: #f7f3ec;
-}
-
-#application-form {
-  border: 7px solid #b08d57;
-  background-color: #efe9db;
-}
-
-#application-form h2 {
-  color: #b08d57;
-}
-
-#application-form input,
-#application-form textarea,
-#application-form select {
-  border: 1px solid white;
-}
-
-#application-form button {
-  background-color: #b08d57;
-  color: white;
-}
-
-#application-form button {
-  background-color: #b08d57;
-  color: white;
-}
-
-.vacancies-title {
-  background-color: #b08d57;
-}
-
-.whyus {
-  background-color: #efe9db;
-}
-
-.about h1 {
-  border-bottom: 2px solid #b08d57;
-}
-
-.about h2 {
-  border-bottom: 1px solid #ccc;
-}
-
-.left {
-  border-top: 2px solid #b08d57;
-}
-
-.right {
-  border-top: 2px solid #b08d57;
-}
-
-.left img, .right img {
-  border: 4px solid #b08d57;
-}
-
-.call {
-  background-color: #b08d57;
-  color: white;
-}
-
-.review .review-card:hover {
-  border-color: #b08d57;
-}
-
-.accordion-item {
-  border-bottom: 1px solid #d8d0bd;
-}
-
-.accordion-question {
-  color: #1c1e2e;
-}
-
-.accordion-question::after {
-  color: #b08d57;
-}
-
-#open-popup {
-  background-color: #b08d57;
-  color: #1c1e2e;
-}
-
-.popup-overlay {
-  background-color: rgba(28, 30, 46, 0.7);
-}
-
-.popup-content {
-  background-color: #f7f3ec;
-  border: 3px solid #b08d57;
-}
-
-.popup-close {
-  color: #1c1e2e;
-}
-
-#booking-form input {
-  border: 1px solid #d8d0bd;
-}
-
-#booking-form input:focus {
-  border-color: #b08d57;
-}
-
-.custom-background {
-  background-color: #b08d57;
-}
-
-#diff-color-cpan {
-  color: #1c1e2e;
-}
-
-.btn {
-  background-color: #b08d57;
-}
-
-.theme-btn {
-  border: 2px solid #ffffff;
-}
-
-.theme-btn:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+/* Claude Monet restaurant: real color themes (no page-wide inversion filter). */
+:root {
+  color-scheme: light;
+  --site-bg: #f7f3ec;
+  --site-surface: #fffdf8;
+  --site-surface-soft: #efe9db;
+  --site-text: #29251f;
+  --site-muted: #6d655a;
+  --site-line: #d8d0bd;
+  --site-accent: #b08d57;
+  --site-accent-text: #1c1e2e;
+  --site-input: #ffffff;
+  --site-shadow: 0 8px 24px rgba(35, 28, 18, .10);
 }
 
 html.dark {
-  filter: invert(0.9) hue-rotate(180deg);
+  color-scheme: dark;
+  --site-bg: #17191d;
+  --site-surface: #22262c;
+  --site-surface-soft: #2b3038;
+  --site-text: #f1eee8;
+  --site-muted: #c0b9ad;
+  --site-line: #454b55;
+  --site-accent: #c6a16a;
+  --site-accent-text: #17191d;
+  --site-input: #1c2026;
+  --site-shadow: 0 10px 28px rgba(0, 0, 0, .32);
 }
 
-html.dark img,
-html.dark video {
-  filter: invert(1) hue-rotate(180deg);
-}
+html, body { background: var(--site-bg); color: var(--site-text); }
+body { transition: background-color .25s ease, color .25s ease; }
+body, main, section, article, .container { color: var(--site-text); }
+p, li, label, small, .responsive-text { color: inherit; }
+.text-dark { color: var(--site-text) !important; }
+.bg-white, .bg-light { background-color: var(--site-surface) !important; color: var(--site-text) !important; }
+a { color: var(--site-accent); }
+a:hover { color: var(--site-text); }
 
-html.dark .logo,
-html.dark .theme-icon {
-  filter: none;
-}
+/* Main restaurant header and navigation keep the gold brand color in both modes. */
+#main-header { background: var(--site-accent); }
+.custom-background { background-color: #b08d57 !important; }
+#diff-color-cpan { color: #1c1e2e; }
+.navbar .navbar-toggler { border-color: rgba(28, 30, 46, .45); }
+.navbar .navbar-toggler-icon { filter: none; }
+.theme-btn { border: 2px solid rgba(255,255,255,.8); color: #fff; }
+.theme-btn:hover { background: rgba(255,255,255,.15); }
+.theme-icon { filter: none !important; }
 
-.error {
-  color: #dc3545;
+/* Surfaces and content blocks. */
+.menu-category, .gallery-item, .card, .review-card, .whyus,
+.left, .right, .accordion-item, .api-dish, .auth-card,
+.popup-content, #application-form, .table-responsive {
+  background-color: var(--site-surface);
+  color: var(--site-text);
+  border-color: var(--site-line);
 }
+.menu-item, .accordion-item, .about h2 { border-color: var(--site-line); }
+.menu-category h2, .about h1 { border-color: var(--site-accent); }
+.menu-item, .menu-category li, .menu-category p, .menu-category span,
+table, table td, .accordion-answer, .about, .review-card { color: var(--site-text); }
+.price, .address { color: var(--site-accent); }
 
-.input-error {
-  border-color: #dc3545;
+/* Tables and forms. */
+table { background: var(--site-surface); color: var(--site-text); }
+table th, table td { border-color: var(--site-line); }
+table th { background: var(--site-accent); color: var(--site-accent-text); }
+table tr:nth-child(even) { background: var(--site-surface-soft); }
+input, textarea, select, .form-control, .form-select, .search-input,
+#booking-form input, #application-form input, #application-form textarea,
+#application-form select, .auth-card input {
+  background-color: var(--site-input) !important;
+  color: var(--site-text) !important;
+  border-color: var(--site-line) !important;
 }
-
-#form-success {
-  color: #198754;
+input::placeholder, textarea::placeholder, .search-input::placeholder { color: var(--site-muted); opacity: 1; }
+input:focus, textarea:focus, select:focus, .form-control:focus, .form-select:focus {
+  border-color: var(--site-accent) !important;
+  box-shadow: 0 0 0 .2rem color-mix(in srgb, var(--site-accent) 22%, transparent) !important;
 }
+.search-input:focus { outline: none; }
+.suggestions { background: var(--site-surface); color: var(--site-text); border-color: var(--site-line); }
+.suggestions li:hover { background: var(--site-surface-soft); }
+.no-results, .field-error, .error { color: #dc6464; }
 
-#stars .star.active {
-  color: var(--bs-warning);
+/* Buttons and interactive panels. */
+.btn, #open-popup, #application-form button, .call, .offer-button {
+  background-color: var(--site-accent);
+  color: var(--site-accent-text);
+  border-color: var(--site-accent);
 }
-
-#stars .star {
-  color: var(--bs-secondary-color);
+.btn:hover, #open-popup:hover, #application-form button:hover, .offer-button:hover {
+  background-color: color-mix(in srgb, var(--site-accent) 85%, #000);
+  color: var(--site-accent-text);
 }
+.popup-overlay { background-color: rgba(0,0,0,.68); }
+.popup-close { color: var(--site-text); }
+.gallery-item { background-color: var(--site-surface-soft); }
+.gallery-item .caption { background: rgba(20, 22, 27, .86); color: #fff; }
+img.lazy { opacity: 0; transition: opacity .35s ease; }
+img.lazy.loaded { opacity: 1; }
+img.lazy.image-load-error { opacity: 1; }
 
+/* Legacy theme tokens used by progress, toast and helper UI. */
 :root {
-  --progress-track: rgba(92, 64, 51, 0.12);
+  --progress-track: rgba(92, 64, 51, .12);
   --progress-color: #8b5a2b;
-  --progress-glow: rgba(139, 90, 43, 0.6);
-
+  --progress-glow: rgba(139, 90, 43, .45);
   --spinner-color: #f5ebe0;
-  --spinner-track: rgba(245, 235, 224, 0.35);
+  --spinner-track: rgba(245, 235, 224, .35);
   --btn-disabled-bg: #a68a6d;
-
   --toast-bg: #5c4033;
   --toast-text: #f5ebe0;
   --toast-border: #c19a6b;
-
   --copy-btn-bg: #e8d9c5;
   --copy-btn-color: #5c4033;
   --copy-btn-hover: #d9b99b;
@@ -261,3 +118,23 @@ html.dark .theme-icon {
   --tooltip-bg: #5c4033;
   --tooltip-text: #f5ebe0;
 }
+html.dark {
+  --progress-track: rgba(255,255,255,.12);
+  --progress-color: #c6a16a;
+  --progress-glow: rgba(198,161,106,.45);
+  --spinner-color: #c6a16a;
+  --spinner-track: rgba(198,161,106,.25);
+  --btn-disabled-bg: #55504a;
+  --toast-bg: #22262c;
+  --toast-text: #f1eee8;
+  --toast-border: #c6a16a;
+  --copy-btn-bg: #343a43;
+  --copy-btn-color: #f1eee8;
+  --copy-btn-hover: #454b55;
+  --tooltip-bg: #22262c;
+  --tooltip-text: #f1eee8;
+}
+
+#stars .star.active { color: var(--bs-warning); }
+#stars .star { color: var(--site-muted); }
+#form-success { color: #198754; }
