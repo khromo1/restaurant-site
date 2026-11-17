@@ -1,4 +1,5 @@
 const form = document.getElementById("booking-form");
+if (form) {
 
 function setError(id, message) {
     document.getElementById(id + "-error").textContent = message;
@@ -109,3 +110,4 @@ form.addEventListener("reset", function () {
     });
     document.getElementById("form-success").textContent = "";
 });
+}
